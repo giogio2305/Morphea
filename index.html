@@ -7,7 +7,8 @@
     <title>Morphea</title>
 </head>
 <body>
-    <section class="top">
+    <!-- Premiere section -->
+    <section id="sec-one">
         <div class="icop">
             <img src="./assets/handshake.png" alt="handshake">
         </div>
@@ -24,32 +25,219 @@
             <p>Explorez le confort absolu pendant 100 nuits avec notre matelas, une période d'essai qui reflète notre certitude inébranlable quant à la satisfaction totale de nos clients. Découvrez la
                 différence sans aucun risque.</p>
         </div>
+        <!-- Style -->
+        <style>
+        #sec-one{
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            width: 98%;
+            padding: 8px;
+        }
+        #sec-one .stb{
+            max-width: 380px;
+            text-align: justify;
+        }
+        #sec-one .tr{
+            text-align: right !important;
+        }
+        #sec-one .stb h3{
+        margin-bottom: 12px;
+        font-size: 18px;
+        text-transform: uppercase;
+        }
+        
+        #sec-one .stb p {
+            font-weight: normal;
+            font-size: 17px;
+        }
+        #sec-one .ico{
+            width: 130px;
+            height: 130px;
+        }
+        #sec-one .ico img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        #sec-one .icop{
+            display: none;
+            width: 130px;
+            height: 130px;
+        }
+        #sec-one .icop img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        @media screen and (max-width: 600px) {
+    #sec-one{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 98%;
+        padding: 16px;
+        background-color: #eaeaea;
+        border-radius: 20px;
+    }
+    #sec-one .stb{
+        max-width: 320px;
+        text-align: center !important;margin: 12px 0;
+    }
+    #sec-one .stb p{
+        font-size: 13px;
+        font-weight: 500;
+    }
+    #sec-one .stb h3{
+        font-size: 15px;
+    }
+    #sec-one .ico{
+        display: none;
+    }
+    #sec-one .icop{
+        display: block;
+        width: 110px;
+        height: 110px;
+    }
+        }</style>
     </section>
 
-    <section class="mid">
+    <!-- Deuxieme section -->
+    <section id="sec-two" class="mid">
+
         <div class="exp">
-            <h4>Pourquoi choisir un matelas latex ?</h4>   
-            <h2>&lt;</h2>
+            <div class="exhd">
+                <h4>Pourquoi choisir un matelas latex ?</h4>   
+                <h2>&lt;</h2>
+            </div>
+            <div class="exct">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati atque quibusdam perspiciatis voluptatum libero ullam, enim, nulla consequatur est numquam architecto sint laboriosam necessitatibus. Sed magnam recusandae nisi libero molestias.
+            </div>
         </div>
 
         <div class="exp">
-            <h4>Comment choisir un matelas latex ?</h4>   
-            <h2>&lt;</h2>
+            <div class="exhd">
+                <h4>Comment choisir un matelas latex ?</h4>   
+                <h2>&lt;</h2>
+            </div>
+            <div class="exct">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati atque quibusdam perspiciatis voluptatum libero ullam, enim, nulla consequatur est numquam architecto sint laboriosam necessitatibus. Sed magnam recusandae nisi libero molestias.
+            </div>
         </div>
 
         <div class="exp">
-            <h4>Quelques tips à propos du latex naturel ?</h4>   
-            <h2>&lt;</h2>
+            <div class="exhd">
+                <h4>Quelques tips à propos du latex naturel ?</h4>   
+                <h2>&lt;</h2>
+            </div>
+            <div class="exct">
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati atque quibusdam perspiciatis voluptatum libero ullam, enim, nulla consequatur est numquam architecto sint laboriosam necessitatibus. Sed magnam recusandae nisi libero molestias.
+            </div>
         </div>
+        <!-- style -->
+        <style>
+            #sec-two{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 98%;
+            padding: 8px;
+            margin: 68px 0 68px 0;
+        }
+        #sec-two .exp {
+            width: 488px;
+            height: auto;
+            padding: 16px 24px;
+            border-radius: 100px;
+            border: 1px solid #2b195a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            margin: 12px 0;
+            cursor: pointer;
+        }
+        #sec-two .active{
+            padding: 20px 24px !important;
+            border-radius: 32px !important;
+        }
+        #sec-two .active h2 {
+            transform: rotate(-90deg);
+        }
+        #sec-two .exp h4{
+            font-weight: 600;
+        }
+        #sec-two .exhd{
+            width: 90%;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        #sec-two .exct{
+            display: none;
+            max-height: 0;
+            overflow: hidden;
+            margin-top: 20px;
+            font-size: 14px;
+            text-align: center;
+            transition: all 0.6s ease-in-out;
+        }
+        @media screen and (max-width: 600px) {
+        #sec-two{
+        margin: 48px 0 48px 0;
+            }
+        #sec-two .exp {
+        width: 296px;
+        max-width: 300px;
+        height: auto;
+        padding: 8px 10px;
+        font-size: 11px;
+        margin: 8px 0;
+        }
+        #sec-two .exct{
+            margin-top: 10px !important;
+            font-size: 12px !important;
+        }
+        }
+        </style>
+        <!-- script js -->
+        <script>
+            var coll = document.getElementsByClassName("exp");
+            var i;
+            for (i = 0; i < coll.length; i++) {
+            coll[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var content = this.querySelector('.exct');
+                console.log(content)
+                if (content.style.display === "block") {
+                content.style.display = "none";
+                } else {
+                content.style.display = "block";
+                }
+                if (content.style.maxHeight){
+                content.style.maxHeight = null;
+                } else {
+                content.style.maxHeight = content.scrollHeight + "px";
+                } 
+            });
+            }
+        </script>
     </section>
 
-    <section class="end">
+    <!-- Troisieme section -->
+    <section id="sec-three" class="end">
         <div class="tt">
             <h3>Nos experts vous recommandent:</h3>
             <p>Une selection de produits Morphea&copy; spécialement conçu pour vous.</p>
         </div>
 
         <div class="pro">
+        <div class="swiper-wrapper">
             <div class="block">
                 <div class="ic">
                     <img src="https://www.morpheabed.com/cdn/shop/files/noah3_1200x1200_3e0f94c9-287c-4774-b0e0-94495076ea84_450x450.png?v=1702912176" alt="">
@@ -83,6 +271,128 @@
                 </div>
             </div>
         </div>
+</div>
+
+        <!-- style -->
+        <style>
+        #sec-three {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 8px;
+        }
+        #sec-three .tt {
+            text-align: center;
+        }
+        #sec-three .tt h3{
+        font-size: 32px;
+        line-height: 40px;
+        font-weight: 800;
+        margin-bottom: 14px;
+        }
+        #sec-three .tt p {
+            font-size: 14px;
+            font-weight: normal;
+        }
+
+        #sec-three .pro{
+            width: 95%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #sec-three .swiper-wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+       }
+        #sec-three .block{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 60px 0;
+        }
+
+        #sec-three .ic{
+            width: 280px;
+            height: 280px;
+            margin: 10px 0;
+            border-radius: 20px;
+            overflow: clip;
+            margin-bottom: 20px;
+        }
+        #sec-three .ic img{
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        #sec-three .tc{
+            text-align: center;
+        }
+        #sec-three .tc p {
+            margin: 10px 0;
+        }
+
+        #sec-three .swiper {
+            width: 100% !important;
+            height: 100% !important;
+            }
+
+        @media screen and (max-width: 600px) {
+        #sec-three .tt h3{
+        font-size: 16px;
+        line-height: 100%;
+        text-wrap: nowrap;
+        font-weight: 800;
+        margin-bottom: 8px;
+       }
+       #sec-three .tt p {
+           font-size: 8px;
+           font-weight: normal;
+       }
+
+       #sec-three .pro{
+        width: 94vw;
+        display: flex;
+        align-items: center;
+        justify-content:  start;
+        background-color: #fff;
+        overflow: clip;
+       }
+       #sec-three .swiper-wrapper{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        overflow-x: scroll;
+        padding: 0 40px 0 40px;
+       }
+
+       #sec-three .block{
+        margin: 40px 4px;
+        }
+    
+        #sec-three .ic{
+        width: 180px;
+        height: 180px;
+        margin: 6px 0;
+        margin-bottom: 10px;
+    }
+    #sec-three .tc h3{
+        font-size: 14px;
+    }
+    #sec-three .tc p {
+        font-size: 11px;
+        margin: 8px 0;
+    }
+        }
+        </style>
     </section>
 </body>
 </html>
